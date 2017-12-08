@@ -1,0 +1,190 @@
+* { 
+	height: 120%;
+ }
+
+section {
+	background-color: #16AA9D;
+	width: 20%;
+	height: 120%;
+	float: left;
+	display: inline;
+}
+
+nav {
+	padding: 5%;
+	text-align: center;
+	display: table-cell;
+	height: 30%
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0%;
+	border: 1px solid #3A3A3C;
+}
+
+li {
+	height: 25%;
+	padding-top: 13%;
+	color: #3A3A3C;
+	border-bottom: 1px solid #3A3A3C;
+	text-align: center;
+	background-color: #AFD246;
+	font-size: 1.5em;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+main {
+	background-color: #16AA9D;
+	width: 55%;
+	height: 120%;
+	float: left;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -3%;
+	padding-top: 1%; 
+}
+
+h1 {
+	padding-top: 20%;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+
+aside {
+	background-color: #16AA9D;
+	width: 25%;
+	height: 120%;
+	float: left;
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	padding-top: 1.5%;
+	padding-right: 1.5%;
+}
+
+img {
+	margin: auto;
+	display: block;
+	height: 100%;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+table {
+	display: inline;
+	position: relative;
+}
+
+footer {
+	height: 9%;
+	width: 55%;
+	clear: both;
+	margin-left: 0%;
+	bottom: 0;
+	position: fixed;
+	background-color: #AFD246;
+	text-align: center;
+	display: block;
+	padding-top: 1%;
+	color: #3A3A3C;
+	margin-left: 20%;
+	font-size: 1.5em;
+	margin-bottom: 0.5%;
+}
+
+header {
+	height: 3%;
+	background-color: #AFD246;
+	text-align: center;
+	color: #3A3A3C;
+	clear: both;
+	position: absolute;
+	width: 57%;
+	margin-left: 22%;
+	margin-top: 0.5%;
+	padding-right: 4%;
+	font-size: 1em;
+}
+
+a:link {
+	color: #3A3A3C;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #3A3A3C;
+	text-decoration: none;
+}
+
+#Dec {
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+#Dec:hover {opacity: 0.6;}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #698;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+
+    }
+figcaption {
+	text-align: center;
+	font-size: 0.5em;
+}
+
+---------
+
+

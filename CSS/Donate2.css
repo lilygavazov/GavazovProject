@@ -1,0 +1,149 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+//	Colors
+$orange: #FF5335;
+$bg: #DFE0D4;
+$blue: #3E92A3;
+$darkblue: #353940;
+$text: #4A4A4A;
+$green: #2ecc71;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: $bg;
+	color: $text;
+	font: {
+		size: 16px;
+		family: 'Roboto', Helvetica, sans-serif
+	}
+	line-height: 1.4;
+	padding: 1rem;
+}
+
+/* TYPOGRAPHY */
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 0.318em 0 0.35em;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+small {font-size: 0.75em;}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	max-width: 30rem;
+	margin: 1rem auto;
+}
+
+.tabs {
+	display: flex;
+	justify-content: space-between;
+	li {
+		background: $darkblue;
+		border: none;
+		color: white;
+		cursor: pointer;
+		display: block;
+		flex: 1;
+		margin: 0;
+		padding: 1rem;
+		text-align: center;
+		transition: .25s ease all;
+		a{ color: white;}
+		&:hover {
+			background: lighten($darkblue, 5%);
+		}
+	}
+}
+
+.active {
+	background: lighten($darkblue, 10%) !important;
+}
+
+.step {
+	background: white;
+	padding: 1rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	position: fixed;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: 180px;
+    overflow-y: auto;
+    background-color: #eee;
+	
+	h3 {
+		flex: 100%;
+		padding: 0 1rem 1rem;
+	}
+	
+	.amount {
+		background: $blue;
+		color: white;
+		cursor: pointer;
+		flex: 35%;
+		margin: 0 .5rem 1rem;
+		padding: 1rem;
+	}
+	
+	.next, .final {
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		align-self: flex-end !important;
+		padding: 1rem;
+		transition: .25s ease all;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.next { background: $blue; &:hover{ background: lighten($blue, 5%);}}
+	
+	.final { background: $green; &:hover{ background: lighten($green, 5%);} }
+	
+	.info {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		label {display: block; flex: 100%; text-align: left;}
+		input {
+			border: .125rem solid gray;
+			box-shadow: 0 3px 4px 1px rgba(0,0,0, 0.25) inset;
+			font-size: 1rem;
+			margin: .5rem 0 1rem;
+			padding: .5rem;
+			&[type="text"], &[type="email"] {
+				flex: 100%;
+			}
+			
+			&[name="zip"] {
+				width: 50%;
+				flex: 50% !important;
+				padding: .25rem;
+			}
+		}
+	}
+	
+}
